@@ -1,25 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+
+
 
 function App() {
+  
+  const [plus,setPlus] = useState(8);
+  
+  
+  function length_plus(){
+        setPlus(plus+1);
+  };
+  function length_minus(){
+    if(plus>=9){
+    setPlus(plus-1);
+    }
+    else{
+      alert("You need 8 characters for a strong password.")
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <h1>Generate password</h1>
+    <div className='pwd-length'>Choose password length {plus}</div>
+    <button onClick={length_plus}>+</button>
+    <button onClick={length_minus}>-</button>
+    </> 
+  );  
 }
 
 export default App;
