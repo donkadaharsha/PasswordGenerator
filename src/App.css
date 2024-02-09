@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: 'Arial', sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  text-align: center;
+  padding: 80px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 80%;
+  max-width: 600px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  color: #3498db;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#password-box {
+  border: 2px solid #3498db;
+  padding: 10px;
+  margin: 2px auto;
+  margin-bottom: 20pt;
+  width: 80%;
+  max-width: 400px;
+  height: 2px; 
+  font-size: 10pt;
+  font-family: monospace;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+}
+
+
+.pwd-length {
+  font-size: 20px;
+}
+
+button {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: center;
+}
+
+#final-pwd-size {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+#final-pwd {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.plus-minus-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.plus-minus-buttons button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.copy-btn{
+  position: relative;
+  margin-left: 147pt;
+  margin-top: -15pt;
+
+}
+.password{
+  letter-spacing: 2px;
+  margin: 10px;
 }
